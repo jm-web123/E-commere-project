@@ -46,7 +46,7 @@ const Cart = ({cartItems, setCartItems}) => {
    }
         
   function placeOrderHandler() {
-    fetch("http://localhost:5000/api/v1/order", {
+    fetch("https://e-commere-project-11.onrender.com/order", {
 method: 'POST',
 headers: {'Content-Type': 'application/json'},
 body:JSON.stringify(cartItems)
