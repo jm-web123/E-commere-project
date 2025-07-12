@@ -7,7 +7,7 @@ const ProductDetails = ({cartItems, setCartItems}) => {
   const {id} = useParams();
 
    useEffect(() => {
-    fetch('https://e-commere-project-13.onrender.com/api/v1/product/'+id).then(res => res.json()).
+    fetch('https://e-commere-project-17.onrender.com/api/v1/product/'+id).then(res => res.json()).
     then(res => setProduct(res.product))
     
    },[])

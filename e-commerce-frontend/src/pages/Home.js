@@ -10,7 +10,7 @@ const [searchparams, setSearchParams] = useSearchParams()
 
 
  useEffect(() => {
-  fetch('https://e-commere-project-13.onrender.com/api/v1/product?'+searchparams).then(res => res.json()).
+  fetch('https://e-commere-project-17.onrender.com/api/v1/product?'+searchparams).then(res => res.json()).
   then(res => setProducts(res.products))
   
  },[searchparams])
